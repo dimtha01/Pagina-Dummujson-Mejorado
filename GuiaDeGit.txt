@@ -1,4 +1,4 @@
-Git y GitHub
+Guía básica de Git y GitHub
 
 1. Configuración inicial:
    git config --global user.name "Tu Nombre"
@@ -29,3 +29,8 @@ Git y GitHub
 7. Historial y cambios:
    git log
    git diff <nombre-del-archivo>
+
+8. Cuando el repositorio ya existe:
+   git clone <url-del-repositorio>
+   git pull origin <nombre-de-la-rama>
+   git push origin <nombre-de-la-rama>

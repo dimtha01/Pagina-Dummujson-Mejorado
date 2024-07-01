@@ -1,4 +1,5 @@
 import React from 'react'
+import Modal from './Modal'
 
 const Card = ({ item }) => {
     return (
@@ -13,13 +14,14 @@ const Card = ({ item }) => {
                         <p className="card-text text-success mb-2">{item.brand}</p>
                         <h5 className="card-text text-danger">{item.price}$</h5>
                         <div className="mt-auto">
-                            <button type="button" className="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target={`#${item.id}`}>
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target={`#${item.id}`}>
                                 Detalles
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
+            <Modal key={item.id} item={item} />
 
         </>
     )
